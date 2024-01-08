@@ -20,6 +20,8 @@ class Product extends Model implements ProductContract
         'sku',
         'description',
         'quantity',
-        'price'
+        'price',
+        'api_entity_id',
+        'api_entity_source_type_id',
     ];
 }
