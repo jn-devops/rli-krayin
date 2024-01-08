@@ -101,6 +101,8 @@ class ProductController extends Controller
 
         Event::dispatch('product.update.after', $product);
 
+        Event::dispatch('bagisto.catalog.product.update.after', $product);
+
         session()->flash('success', trans('admin::app.products.update-success'));
 
         return redirect()->route('admin.products.index');
