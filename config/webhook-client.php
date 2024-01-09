@@ -1,4 +1,3 @@
-
 <?php
 
 return [
@@ -54,7 +53,7 @@ return [
 
             ],
 
-             /*
+            /*
              * The class name of the job that will process the webhook request.
              *
              * This should be set to a class that extends \Spatie\WebhookClient\Jobs\ProcessWebhookJob.
@@ -62,11 +61,4 @@ return [
             'process_webhook_job' => \Webkul\BagistoConnector\Jobs\ProcessReceiverJob::class,
         ],
     ],
-
-    /*
-     * The integer amount of days after which models should be deleted.
-     *
-     * 7 deletes all records after 1 week. Set to null if no models should be deleted.
-     */
-    'delete_after_days' => 30,
 ];
